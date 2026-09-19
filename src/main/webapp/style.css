@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* ==========================================
+   1. REGLES GENERALES & REINITIALISATION
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f9; /* Fond gris clair de la maquette */
+    color: #333333;
+}
+
+/* ==========================================
+   2. MENU LATERAL (ASIDE / NAVIGATION)
+   ========================================== */
+aside {
+    border-right: 1px solid #e5e7eb;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside nav {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #6b7280;
+    font-weight: 500;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+aside nav a:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   3. CONTENU PRINCIPAL (SECTION)
+   ========================================== */
+section {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+/* --- CARTE RESUME (KPIs) --- */
+.content-resume {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.resume {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f0f0f0;
+}
+
+.resume h2:first-child {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.resume h2:last-child, .resume {
+    font-size: 1.8rem;
+    color: #111827;
+    font-weight: 700;
+} 
+.resume .view {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+    color: #111827;
+    font-weight: 700;
+
+}
+.resume a {
+  display: inline;
+  text-align: right;
+  font-size:  0.9rem;
+}
+
+/* --- BLOCS TABLEAUX (TASKS & EMPLOYEES) --- */
+.tableau {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f0f0f0;
+    /* REMPLACE height: max-content PAR CES 4 LIGNES : */
+    flex: 1;                     /* Sépare l'espace restant équitablement (50/50) */
+    display: flex;
+    flex-direction: column;      /* Alignement vertical : Titre en haut, Tableau en bas */
+    min-height: 0;
+}
+.filtrer {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 15px;
+}
+.filtrer button {
+    background: #f5f6f8;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    color: #6e7278;
+    cursor: pointer;
+}
+.filtrer button:hover {
+    background: #e5e7eb;
+    color: #111827;
+}
+.tableau .input-rechercher {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.tableau .input-rechercher .rech {
+    width: 50%;
+    margin: 15px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 15px 25px;
+    border: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Titres au-dessus des tableaux */
+.tableau h2 {
+    caption-side: top;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+    display: block;
+}
+.tableau .titre-table{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.complementaire {
+    margin-bottom: 10px;
+}
+.tableau .titre-table a {
+    display: inline;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+.tableau .titre-table .add {
+  background-color: green;
+  height: 60%;
+  padding: 5px;
+  border-radius: 15%;
+  color: #111827;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    font-weight: 600;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+td {
+    padding: 16px 0;
+    border-bottom: 1px solid #f9fafb;
+    color: #374151;
+    font-size: 0.95rem;
+}
+ 
+/*=====================================================================================================
+
+                    gestion des employee
+
+
+=======================================================================================================*/
+.entete {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+.label-conge {
+    display: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>DashboardControleur</servlet-name>
+  	<display-name>DashboardControleur</display-name>
+  	<description></description>
+  	<servlet-class>com.eusebio.tsilaosana.controleur.DashboardControleur</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EvenementControleur</servlet-name>
+  	<display-name>EvenementControleur</display-name>
+  	<description></description>
+  	<servlet-class>com.eusebio.tsilaosana.controleur.EvenementControleur</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InviteControleur</servlet-name>
+  	<display-name>InviteControleur</display-name>
+  	<description></description>
+  	<servlet-class>com.eusebio.tsilaosana.controleur.InviteControleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DashboardControleur</servlet-name>
+  	<url-pattern>/DashboardControleur</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EvenementControleur</servlet-name>
+  	<url-pattern>/EvenementControleur</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InviteControleur</servlet-name>
+  	<url-pattern>/InviteControleur</url-pattern>
+  </servlet-mapping>
+</web-app>
