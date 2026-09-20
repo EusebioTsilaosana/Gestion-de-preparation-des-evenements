@@ -22,6 +22,12 @@
   	<description></description>
   	<servlet-class>com.eusebio.tsilaosana.controleur.InviteControleur</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>SaisieEventControleur</servlet-name>
+  	<display-name>SaisieEventControleur</display-name>
+  	<description></description>
+  	<servlet-class>com.eusebio.tsilaosana.controleur.SaisieEventControleur</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>DashboardControleur</servlet-name>
   	<url-pattern>/DashboardControleur</url-pattern>
@@ -33,5 +39,9 @@
   <servlet-mapping>
   	<servlet-name>InviteControleur</servlet-name>
   	<url-pattern>/InviteControleur</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SaisieEventControleur</servlet-name>
+  	<url-pattern>/SaisieEventControleur</url-pattern>
   </servlet-mapping>
 </web-app>

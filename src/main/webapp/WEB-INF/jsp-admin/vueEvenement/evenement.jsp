@@ -18,7 +18,7 @@
             </div>
             <div class="titre-table">
                 <h2>Listes des evenements</h2>
-                <a href="" class="add">+ Add</a>
+                <a href="${pageContext.request.contextPath}/SaisieEventControleur" class="add">+ Add</a>
             </div>
 
             <div class="filtrer">
