@@ -1,0 +1,8 @@
+com/eusebio/tsilaosana/modele/Invite.class
+com/eusebio/tsilaosana/controleur/EvenementControleur.class
+com/eusebio/tsilaosana/service/EvenementService.class
+com/eusebio/tsilaosana/modele/Espace.class
+com/eusebio/tsilaosana/repository/EvenementRepository.class
+com/eusebio/tsilaosana/controleur/DashboardControleur.class
+com/eusebio/tsilaosana/controleur/InviteControleur.class
+com/eusebio/tsilaosana/modele/Evenement.class

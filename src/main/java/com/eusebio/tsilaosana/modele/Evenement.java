@@ -9,6 +9,9 @@ public class Evenement {
 	private Date date_heure_debut;
 	private Date date_heure_fin;
 	
+	public Evenement() {
+	}
+
 	public Evenement(String idEvenement, String titre, String status, Date date_heure_debut, Date date_heure_fin) {
 		super();
 		this.idEvenement = idEvenement;

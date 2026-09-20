@@ -1,0 +1,8 @@
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/controleur/DashboardControleur.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/controleur/EvenementControleur.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/controleur/InviteControleur.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/modele/Espace.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/modele/Evenement.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/modele/Invite.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/repository/EvenementRepository.java
+/home/ghost/Documents/Gestion-de-preparation-des-evenements/src/main/java/com/eusebio/tsilaosana/service/EvenementService.java
